@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaHut</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <img src="https://sp.yimg.com/ib/th/id/OIP.iB-UyT4-y-MMqHV0RHLt4QAAAA?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" class="menu" style="height:40px;width:40px;margin-left: 10px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto  ">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="deal.html">Deals</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white"></header>
+
+    <!--one main container-->
+    <div class="container-fluid">
+        <h1 class=" fw-bold  mt-5">Hot & Fresh Pizza</h1>
+        <p class="lead">Order your favorite pizza anytime </p>
+        <button class="btn btn-warning btn-lg mb-5">Order Now</button>
+
+        <!--our popular pizzas-->
+        <h2 class="text-center mt-3 mb-5 ">Our Popular Pizzas</h2>
+        <div class="row g-4 mb-5 mx-0">
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class=" card h-100">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.SB0es7t6-piLZC0pmcNjoAHaE7?pid=Api&P=0&h=180" alt="margherita pizza" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Margherita</h5>
+                        <p>Rs199</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 col-md-3 mb-3">
+                <div class="card h-100">
+                    <img src="https://www.nordicware.com/wp-content/uploads/2021/05/46400_traditional_pizza_pan_02_e.jpg" alt="veg supreme pizza" class="card-img-top">
+                    <div class="card-body text-center ">
+                        <h5>Veg Supreme</h5>
+                        <p>Rs 200</p>
+                        <button class=" btn btn-primary ">Add
+                                to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class=" card h-100">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.rdZaeBfwLSjr_qgSU0qXuwHaHa?pid=Api&P=0&h=180" alt="pepperoni pizza" class="card-img-top">
+                    <div class="card-body text-center ">
+                        <h5>Pepperoni</h5>
+                        <p>Rs300</p>
+                        <button class=" btn btn-primary ">Add
+                                to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class=" card h-100">
+
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.iVPR95pSXhhZqXg78V3LnwHaHY?pid=Api&P=0&h=180" alt="thin n crispy pizza" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Thin'N Crispy</h5>
+                        <p>Rs300</p>
+                        <button class=" btn btn-primary ">Add
+                                to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+
+        <div id="pizzaCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#pizzaCarousel" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item text-center active">
+                    <img src="https://pixahive.com/wp-content/uploads/2020/10/Spicy-Pizza-131675-pixahive.jpg" alt="pizza-image" class="d-block mx-auto carousel-img">
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzA1MzA1MzE2fA&ixlib=rb-4.0.3"
+                        alt="pizza-image" class="d-block mx-auto carousel-img ">
+                </div>
+
+                <div class="carousel-item text-center">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBpenphJTIwaHV0fGVufDB8fDB8fHww" alt="pizza-image" class="d-block mx-auto carousel-img">
+                </div>
+
+                <div class="carousel-item text-center">
+                    <img src="https://www.unclealspizza.com/wp-content/uploads/2024/06/Pizza-Hut-Pizza-Sizes.jpg" alt="pizza-image" class="d-block mx-auto carousel-img">
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+        </div>
+        <div class="row g-4 mt-5 mx-0">
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class=" card h-100">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.dO7miFz136F4laxlqU-k4gHaG2?pid=Api&P=0&h=180" alt="margherita pizza" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>New York</h5>
+                        <p>Rs199</p>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 col-md-3 mb-3">
+                <div class="card h-100">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.I-TrGXBK4GKD38-9qUXbNgHaHa?pid=Api&P=0&h=180" alt="veg supreme pizza" class="card-img-top">
+                    <div class="card-body text-center ">
+                        <h5>Original Pan</h5>
+                        <p>Rs 200</p>
+                        <button class=" btn btn-primary ">Add
+                                to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class=" card h-100">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.rdZaeBfwLSjr_qgSU0qXuwHaHa?pid=Api&P=0&h=180" alt="pepperoni pizza" class="card-img-top">
+                    <div class="card-body text-center ">
+                        <h5>Stuffed crust</h5>
+                        <p>Rs300</p>
+                        <button class=" btn btn-primary ">Add
+                                to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class=" card h-100">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.iVPR95pSXhhZqXg78V3LnwHaHY?pid=Api&P=0&h=180" alt="thin n crispy pizza" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5>Hand toast</h5>
+                        <p>Rs300</p>
+                        <button class=" btn btn-primary ">Add
+                                to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-warning text-center mt-4 p-4 ">
+            <h2>🔥 Flat 50% OFF on First Order</h2>
+            <button class="btn btn-dark btn-lg mt-3 ">Grab
+                    Deal</button>
+        </div>
+        <!--footer-->
+
+        <footer class="bg-dark text-white mt-5 pt-5">
+            <div class="row ">
+                <!-- About -->
+                <div class="col-12 col-md-4 mb-3 ">
+                    <h5 class="fw-bold ">Pizza Hut</h5>
+                    <p>
+                        Serving hot & fresh pizzas made with love. Order online and enjoy delicious moments with family & friends.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 col-md-4 mb-3 ">
+                    <h5 class="fw-bold ">Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="# " class="text-white text-decoration-none ">Home</a></li>
+                        <li><a href="# " class="text-white text-decoration-none ">Menu</a></li>
+                        <li><a href="# " class="text-white text-decoration-none ">Offers</a></li>
+                        <li><a href="# " class="text-white text-decoration-none ">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact / Unique Section -->
+                <div class="col-12 col-md-4 mb-3 ">
+                    <h5 class="fw-bold ">Contact</h5>
+                    <p class="mb-1 ">7498500188</p>
+                    <p class="mb-1 ">📧 Email:</p>
+                    <p class="fw-semibold">sanjotnalode@gmail.com</p>
+                    <p class="mb-1 ">📍 Location:</p>
+                    <p>Nagpur, Maharashtra</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary ">
+
+            <!-- Bottom Footer -->
+            <div class="text-center pb-3 ">
+                © 2025 Pizza Hut | Designed by <span class="fw-bold ">Sanjot
+                        Nalode</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

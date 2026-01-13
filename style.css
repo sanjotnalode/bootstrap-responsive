@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    text-align: center;
+    transition: all 0.4s ease;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.lead {
+    text-align: center;
+    color: black;
+}
+
+header {
+    height: 60vh;
+    background: url("https://media.istockphoto.com/id/476031280/photo/pizza.jpg?s=2048x2048&w=is&k=20&c=2h4bZVgcIugiDHp3ye7nK1XGcd7CSjv-F5OP9tXzs2o=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    opacity: initial;
+}
+
+.btn-warning {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+    font-weight: bold;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Large Mobile Devices (481px to 767px) */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+    .card-img-top {
+        height: 180px;
+    }
+    .carousel-item {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 765px) and (max-width: 1024px) {
+    .card-img-top {
+        height: 200px;
+    }
+    .carousel-item {
+        height: 280px;
+    }
+    header {
+        height: 40vh;
+    }
+}
+
+
+/* Menu page */
+
+.menu {
+    text-align: center;
+}
